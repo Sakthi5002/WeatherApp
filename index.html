@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weahter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h2>Weather</h2>
+        </div>
+        <div class="inputs">
+            <label for="lat">Latitude</label>
+            <input type="text" id="lat" class="box">
+            <label for="lon">Longitude</label>
+            <input type="text" id="lon" class="box">
+            <input type="submit" id="submit" class="submit">
+        </div>
+        <div class="details">
+            <table>
+                <tr>
+                    <td>Condition</td>
+                    <td>-</td>
+                    <td id="condition">_</td>
+                </tr>
+                <tr>
+                    <td>Temperature</td>
+                    <td>-</td>
+                    <td id="temp">_</td>
+                </tr>
+                <tr>
+                    <td>Wind Speed</td>
+                    <td>-</td>
+                    <td id="wind">_</td>
+                </tr>
+                <tr>
+                    <td>Humidity</td>
+                    <td>-</td>
+                    <td id="humid">_</td>
+                </tr>
+            </table>
+        </div> 
+        <p style="position: absolute; bottom: 0;font-size: 12px; left: 47%;">Copyright © Sakthi S</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
