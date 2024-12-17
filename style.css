@@ -6,10 +6,16 @@
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: white;
+    border: 1px solid black;
+}
+
+body p{
+    align-self: bottom;
 }
 
 .container{
@@ -19,6 +25,10 @@ body{
     justify-content: center;
     align-items: center;
     /* border: solid black; */
+}
+
+.container p{
+    justify-self: bottom;
 }
 
 .head{
@@ -81,7 +91,11 @@ input[type=text]:focus{
 }
 
 .details{
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 table{
