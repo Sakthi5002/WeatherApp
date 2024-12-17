@@ -11,7 +11,7 @@ const humid = document.getElementById('humid')
 const getData = async () => {
     var lat = latInput.value
     var lon = lonInput.value
-    req = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${lat},${lon}`
+    req = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${lat},${lon}`
     fetch(req).then(result => result.json())
     .then(result => {
         console.log(result);
